@@ -48,7 +48,7 @@ public class Employee {
                 new Employee("Tom", 23, 140),
                 new Employee("Vova", 45, 300),
                 new Employee("Andrey", 19, 180),
-                new Employee("Roma", 27, 205));
+                new Employee("Maks", 27, 205));
         moreSalary.stream().filter(s -> s.getSalary() > 200).forEach(s -> System.out.println(s.getName()));
         System.out.println("---------");
         moreSalary.stream().sorted(Comparator.comparing(s -> s.getName().toString())).collect(Collectors.toList())
